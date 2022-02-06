@@ -69,6 +69,22 @@
             </tr>
         </table>
         <hr>
+        <h3>Binomial Coefficients</h3>
+        <blockquote>
+            A binomial coefficient equals the number of combinations of r items that can be selected from a set of n items. It also represents an entry in Pascal's triangle. 
+            These numbers are called binomial coefficients because they are coefficients in the binomial theorem.
+        </blockquote>
+        <a href="https://en.wikipedia.org/wiki/Binomial_coefficient">Binomial Coefficients</a>
+       <h4> Code Snippet</h4>
+        <pre>
+        int C(int n, int k) {
+            double res = 1;
+            for (int i = 1; i <= k; ++i)
+                res = res * (n - k + i) / i;
+            return (int)(res + 0.01);
+        }
+        </pre>
+        <hr>
         <a href="./aboutme.html">About Ramu</a>
     </body>
 </html >
